@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="jocimar_paulo.ifsp.boletofacil.ActMenuPrincipal"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnServicos"
+        android:id="@+id/btnServicos"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:textSize="10pt"
+        android:singleLine="false"
+        android:onClick="abrirServicos" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnMultas"
+        android:id="@+id/btnMultas"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="10pt"
+        android:onClick="abrirMultas" />
+</LinearLayout>

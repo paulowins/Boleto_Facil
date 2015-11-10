@@ -1,13 +1,15 @@
-package jocimar_paulo.ifsp.boletofacil;
+package jocimar_paulo.ifsp.boletofacil.telas;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ActSplashArt extends AppCompatActivity {
+import jocimar_paulo.ifsp.boletofacil.R;
+
+public class ActMultas extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_act_splash_art);
+        setContentView(R.layout.activity_act_multas);
     }
 }

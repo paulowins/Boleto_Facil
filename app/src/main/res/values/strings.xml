@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Boleto Facil</string>
+    <string name="btnServicos">Serviços</string>
+    <string name="btnMultas">Multas</string>
+    <string name="btnServicosAmb">Poda de Árvores</string>
+    <string name="btnServicosVisa">Alvará de Funcionamento</string>
+    <string name="btnServicosObra">Licença para Obras</string>
+    <string name="btnMultasAmb">Irregularidade em Terrenos</string>
+    <string name="btnMultasVisa">Irregularidade Sanitária</string>
+    <string name="btnMultasObra">Irregularidade em Obras</string>
+    <string name="lblDadosSacado">Dados do Sacado</string>
+    <string name="lblNomeSacado">Nome:</string>
+    <string name="lblCpfSacado">CPF:</string>
+    <string name="btnGerarBoleto">Gerar Boleto</string>
+    <string name="lblCedente">Cedente:</string>
+    <string name="lblSacado">Sacado:</string>
+    <string name="lblNossoNum">Nosso Número</string>
 </resources>

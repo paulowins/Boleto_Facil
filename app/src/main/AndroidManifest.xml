@@ -21,6 +21,8 @@
         </activity>
         <activity android:name=".telas.ActServicos" >
         </activity>
+        <activity android:name=".telas.ActDadosSacado" >
+        </activity>
     </application>
 
 </manifest>

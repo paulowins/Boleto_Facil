@@ -37,6 +37,7 @@ public class BBBoletoBuilder extends BoletoBuilder {
 
     @Override
     public void buildValor() {
+        //Constroi o valor com base na opção escolhida
         switch (ActDadosSacado.opcaoMenu){
             case 1:
                 boleto.Valor = 33.90f;
@@ -51,6 +52,8 @@ public class BBBoletoBuilder extends BoletoBuilder {
                 boleto.Valor = 230.60f;
                 break;
             case 5:
+                boleto.Valor = 200f;
+                break;
             case 6:
                 boleto.Valor = 300.99f;
                 break;

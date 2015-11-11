@@ -15,8 +15,7 @@
         android:id="@+id/btnMultasAmb"
         android:layout_marginTop="100dp"
         android:text="@string/btnMultasAmb"
-        android:textSize="8pt"
-        android:onClick="abrirDadosSacado" />
+        android:textSize="8pt" />
 
     <Button
         android:layout_width="match_parent"

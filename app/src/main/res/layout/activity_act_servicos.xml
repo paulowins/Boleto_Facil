@@ -16,7 +16,8 @@
         android:id="@+id/btnServicosAmb"
         android:layout_gravity="center_vertical"
         android:layout_marginTop="100dp"
-        android:textSize="8pt" />
+        android:textSize="8pt"
+        android:onClick="abrirDadosSacado" />
 
     <Button
         android:layout_width="match_parent"
@@ -25,7 +26,8 @@
         android:id="@+id/btnServicosVisa"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:textSize="8pt" />
+        android:textSize="8pt"
+        android:onClick="abrirDadosSacado" />
 
     <Button
         android:layout_width="match_parent"
@@ -34,5 +36,6 @@
         android:id="@+id/btnServicosObra"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:textSize="8pt" />
+        android:textSize="8pt"
+        android:onClick="abrirDadosSacado" />
 </LinearLayout>

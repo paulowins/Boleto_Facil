@@ -54,5 +54,6 @@
         android:id="@+id/btnGerarBoleto"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:textSize="8pt" />
+        android:textSize="8pt"
+        android:onClick="abrirBoleto" />
 </LinearLayout>

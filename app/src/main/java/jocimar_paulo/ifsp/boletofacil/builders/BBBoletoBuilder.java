@@ -13,7 +13,7 @@ public class BBBoletoBuilder extends BoletoBuilder {
 
     @Override
     public void buildSacado() {
-
+        boleto.Sacado = ActDadosSacado.nomeSacado + " - " +ActDadosSacado.cpfSacado;
     }
 
     @Override

@@ -12,4 +12,17 @@ public class Boleto {
     Calendar Vencimento;
     int nossoNumero;
     String Observacao;
+
+
+    @Override
+    public String toString() {
+        return "Boleto{" +
+                "Sacado='" + Sacado + '\'' +
+                ", Cedente='" + Cedente + '\'' +
+                ", Valor=" + Valor +
+                ", Vencimento=" + Vencimento +
+                ", nossoNumero=" + nossoNumero +
+                ", Observacao='" + Observacao + '\'' +
+                '}';
+    }
 }

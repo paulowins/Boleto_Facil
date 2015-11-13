@@ -7,23 +7,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import jocimar_paulo.ifsp.boletofacil.dados.Conexao;
 import jocimar_paulo.ifsp.boletofacil.R;
 import jocimar_paulo.ifsp.boletofacil.builders.BBBoletoBuilder;
-import jocimar_paulo.ifsp.boletofacil.builders.Boleto;
 import jocimar_paulo.ifsp.boletofacil.builders.Director;
 
 public class ActDadosSacado extends AppCompatActivity {
 
-    //Variaveis globais para substituir a falta do banco de dados.
-
-    //Qual botão chamou a tela 1,2,3 tipos de serviços / 4,5,6 tipos de multas
-    public static int opcaoMenu;
-    //Armazena os dados digitados do sacado
-    public static String nomeSacado, cpfSacado;
-    //Armazena o boleto construído pelo builder
-    public static Boleto boleto;
-
-    //Variaveis locais
     private EditText edtNomeSacado, edtCpf;
     private Director director;
 
@@ -37,14 +27,14 @@ public class ActDadosSacado extends AppCompatActivity {
         edtCpf = (EditText) findViewById(R.id.edtCpf);
 
         Intent i = getIntent();
-        opcaoMenu = i.getIntExtra("menu", 0);
+        Conexao.opcaoMenu = i.getIntExtra("menu", 0);
 
 
     }
 
     public void abrirBoleto(View v){
-        nomeSacado = edtNomeSacado.getText().toString();
-        cpfSacado = edtCpf.getText().toString();
+        Conexao.nomeSacado = edtNomeSacado.getText().toString();
+        Conexao.cpfSacado = edtCpf.getText().toString();
 
 
 
@@ -53,9 +43,9 @@ public class ActDadosSacado extends AppCompatActivity {
         Ja as multas (Opção 4,5 e 6) são pagos por boletos
         do Itau
          */
-        if (opcaoMenu == 1 || opcaoMenu == 2 || opcaoMenu == 3) {
+        if (Conexao.opcaoMenu == 1 || Conexao.opcaoMenu == 2 || Conexao.opcaoMenu == 3) {
             director = new Director(new BBBoletoBuilder());
-        } else if (opcaoMenu == 4 || opcaoMenu == 5 || opcaoMenu == 6) {
+        } else if (Conexao.opcaoMenu == 4 || Conexao.opcaoMenu == 5 || Conexao.opcaoMenu == 6) {
 
         }
 
@@ -64,7 +54,7 @@ public class ActDadosSacado extends AppCompatActivity {
             director.buildingBoleto();
 
             //Recebe o boleto construído pelo Builder
-            boleto = director.getBoleto();
+            Conexao.boleto = director.getBoleto();
         }
 
         Intent i = new Intent(this, GeraBoleto.class);

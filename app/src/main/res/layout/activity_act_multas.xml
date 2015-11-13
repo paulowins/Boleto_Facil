@@ -15,7 +15,8 @@
         android:id="@+id/btnMultasAmb"
         android:layout_marginTop="100dp"
         android:text="@string/btnMultasAmb"
-        android:textSize="8pt" />
+        android:textSize="8pt"
+        android:onClick="abrirDadosSacado" />
 
     <Button
         android:layout_width="match_parent"
@@ -23,7 +24,8 @@
         android:id="@+id/btnMultasVisa"
         android:layout_marginTop="20dp"
         android:text="@string/btnMultasVisa"
-        android:textSize="8pt" />
+        android:textSize="8pt"
+        android:onClick="abrirDadosSacado" />
 
     <Button
         android:layout_width="match_parent"
@@ -32,5 +34,6 @@
         android:layout_marginTop="20dp"
         android:layout_gravity="right"
         android:text="@string/btnMultasObra"
-        android:textSize="8pt" />
+        android:textSize="8pt"
+        android:onClick="abrirDadosSacado" />
 </LinearLayout>

@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import jocimar_paulo.ifsp.boletofacil.builders.ItauBoletoBuilder;
 import jocimar_paulo.ifsp.boletofacil.dados.Conexao;
 import jocimar_paulo.ifsp.boletofacil.R;
 import jocimar_paulo.ifsp.boletofacil.builders.BBBoletoBuilder;
@@ -46,7 +47,7 @@ public class ActDadosSacado extends AppCompatActivity {
         if (Conexao.opcaoMenu == 1 || Conexao.opcaoMenu == 2 || Conexao.opcaoMenu == 3) {
             director = new Director(new BBBoletoBuilder());
         } else if (Conexao.opcaoMenu == 4 || Conexao.opcaoMenu == 5 || Conexao.opcaoMenu == 6) {
-
+            director = new Director(new ItauBoletoBuilder());
         }
 
         if (director != null) {

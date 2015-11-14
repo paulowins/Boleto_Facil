@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import jocimar_paulo.ifsp.boletofacil.R;
+import jocimar_paulo.ifsp.boletofacil.builders.Boleto;
+import jocimar_paulo.ifsp.boletofacil.dados.Conexao;
 
 public class GeraBoleto extends AppCompatActivity {
 
@@ -16,6 +18,9 @@ public class GeraBoleto extends AppCompatActivity {
         setContentView(R.layout.gera_boleto);
 
         lblBoleto = (TextView) findViewById(R.id.lblBoleto);
-        lblBoleto.setText(ActDadosSacado.boleto.toString());
+
+        //Boleto b = ActDadosSacado.boleto;
+        lblBoleto.setText(Conexao.boleto.toString());
+
     }
 }

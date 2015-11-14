@@ -18,6 +18,7 @@ public abstract class BoletoBuilder {
     public abstract void buildValor();
     public abstract void buildVencimento();
     public abstract void buildNossoNumero();
+    public abstract void buildCodBarras();
     public abstract void buildObsercacao();
 
     public Boleto getBoleto(){

@@ -20,6 +20,7 @@ public class Director {
         builderBoleto.buildValor();
         builderBoleto.buildVencimento();
         builderBoleto.buildNossoNumero();
+        builderBoleto.buildCodBarras();
         builderBoleto.buildObsercacao();
     }
 

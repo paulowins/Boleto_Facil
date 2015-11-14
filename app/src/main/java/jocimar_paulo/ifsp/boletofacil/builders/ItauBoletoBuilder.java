@@ -5,12 +5,12 @@ import java.util.Date;
 import java.util.Random;
 
 import jocimar_paulo.ifsp.boletofacil.dados.Conexao;
-
+import jocimar_paulo.ifsp.boletofacil.telas.ActDadosSacado;
 
 /**
- * Created by paulo on 10/11/15.
+ * Created by paulo on 12/11/15.
  */
-public class BBBoletoBuilder extends BoletoBuilder {
+public class ItauBoletoBuilder extends BoletoBuilder {
 
     @Override
     public void buildSacado() {
@@ -64,7 +64,7 @@ public class BBBoletoBuilder extends BoletoBuilder {
     @Override
     public void buildVencimento() {
         Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.DATE, 15);
+        calendar.add(Calendar.DATE, 30);
         boleto.Vencimento = calendar;
     }
 
@@ -78,7 +78,7 @@ public class BBBoletoBuilder extends BoletoBuilder {
     @Override
     public void buildCodBarras() {
         StringBuilder sb = new StringBuilder();
-        sb.append("001."); //Identificação do banco
+        sb.append("341."); //Identificação do banco
         sb.append("9."); //Codigo da moeda (9 = Real)
         sb.append(boleto.nossoNumero + "."); //5 digitos livres
 
@@ -115,7 +115,7 @@ public class BBBoletoBuilder extends BoletoBuilder {
     @Override
     public void buildObsercacao() {
         boleto.Observacao =  "" +
-                "O boleto deve ser impresso e pago nas agencias do Banco do Brasil." +
+                "O boleto deve ser impresso e pago nas agencias do Banco Itau." +
                 " Não aceitar após o vencimento." +
                 " Levar Comprovante no dia da solicitação.";
     }
@@ -146,3 +146,5 @@ public class BBBoletoBuilder extends BoletoBuilder {
         return (int) ((c1.getTimeInMillis() - c2.getTimeInMillis()) / MILLIS_IN_DAY);
     }
 }
+
+

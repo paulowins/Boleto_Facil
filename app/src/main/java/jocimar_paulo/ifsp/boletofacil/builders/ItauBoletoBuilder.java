@@ -115,8 +115,7 @@ public class ItauBoletoBuilder extends BoletoBuilder {
     @Override
     public void buildObsercacao() {
         boleto.Observacao =  "" +
-                "O boleto deve ser impresso e pago nas agencias do Banco Itau." +
-                " Não aceitar após o vencimento." +
+                "Pagto. somente nas agencias do Banco Itaú.\n" +
                 " Levar Comprovante no dia da solicitação.";
     }
 

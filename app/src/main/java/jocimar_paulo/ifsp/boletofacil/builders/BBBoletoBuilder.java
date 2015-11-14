@@ -115,8 +115,7 @@ public class BBBoletoBuilder extends BoletoBuilder {
     @Override
     public void buildObsercacao() {
         boleto.Observacao =  "" +
-                "O boleto deve ser impresso e pago nas agencias do Banco do Brasil." +
-                " Não aceitar após o vencimento." +
+                "Pagto. somente nas agencias do Banco do Brasil.\n" +
                 " Levar Comprovante no dia da solicitação.";
     }
 

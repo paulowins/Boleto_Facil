@@ -15,4 +15,8 @@
     <string name="lblCedente">Cedente:</string>
     <string name="lblSacado">Sacado:</string>
     <string name="lblNossoNum">Nosso Número</string>
+    <string name="lblVersao">Versão 1.0</string>
+    <string name="lblVencto">Vencimento</string>
+    <string name="lblObs">Observações</string>
+    <string name="lblValor">Valor</string>
 </resources>
